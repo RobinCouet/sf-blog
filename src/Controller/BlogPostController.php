@@ -74,6 +74,16 @@ final class BlogPostController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+             $imageFile = $form->get('image')->getData();
+            
+            if ($imageFile) {
+                // On a défini le parametre upload_directory dans le fichier config/services.yaml
+                // Ca correspond au dossier /public/upload
+                $imageFile->move($this->getParameter("upload_directory"), $imageFile->getClientOriginalName());
+
+                $blogPost->setImage("/upload/" . $imageFile->getClientOriginalName());
+            }
+            
             $this->entityManager->flush();
 
             return $this->redirectToRoute('app_blog_post_index', [], Response::HTTP_SEE_OTHER);
