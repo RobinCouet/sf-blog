@@ -1,6 +1,6 @@
 {
     "app": {
-        "path": "\/assets\/app-ee249bb8fa3916f79a6f28664ae01d02.js",
+        "path": "\/assets\/app-8e03e6dbe2f283051f848709251e9c4e.js",
         "type": "js"
     },
     "\/assets\/bootstrap.js": {
@@ -14,6 +14,10 @@
     "\/assets\/controllers\/hello_controller.js": {
         "path": "\/assets\/controllers\/hello_controller-55882fcad241d2bea50276ea485583bc.js",
         "type": "js"
+    },
+    "\/assets\/styles\/app.css": {
+        "path": "\/assets\/styles\/app-63de8d002866f8488490d3c0a0b73eed.css",
+        "type": "css"
     },
     "@hotwired\/stimulus": {
         "path": "\/assets\/vendor\/@hotwired\/stimulus\/stimulus.index-4b8ccd71e6b1c4ddba22853d5a50a26c.js",
