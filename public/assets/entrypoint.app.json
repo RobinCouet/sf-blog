@@ -1,0 +1,7 @@
+[
+    "\/assets\/bootstrap.js",
+    "@symfony\/stimulus-bundle",
+    "@hotwired\/stimulus",
+    "\/assets\/@symfony\/stimulus-bundle\/controllers.js",
+    "\/assets\/controllers\/hello_controller.js"
+]
